@@ -1,0 +1,77 @@
+html
+{
+background-color: darkgray;
+}
+
+h1
+{
+    text-align: center; 
+    margin: 5em;
+    margin-left: 9em;
+    margin-right: 9em;
+    padding: .2em;
+    border: solid black 2px;
+    background-color: gray;
+    border-radius: .3em;
+}
+
+nav ul
+{
+    text-align: center;
+}
+
+nav ul li
+{
+    font-size: 2em;
+    display:inline;
+    margin: 1em;
+    border: solid black 2px;
+    border-radius: .5em;
+    background-color: gray;
+    padding: .3em;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+}
+
+#Hub
+{
+    text-align: center;
+    margin-top: 20em;
+}
+
+#Hub ul li
+{
+    font-size: 3em;
+    display: inline;
+    margin: 2em;
+    border:solid black 2px;
+    padding: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: gray;
+}
+
+#Hub ul li a
+{
+    text-decoration: none;
+}
+
+.Section
+{
+    margin-top: 3em;
+    margin-bottom: 1em;
+    border: solid black 2px;
+    font-size: 1em;
+    
+}
+
+.Section img
+{
+    
+    margin-right: 5px;
+    width: 20%;
+    height: 20%;
+}
