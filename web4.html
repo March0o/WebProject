@@ -10,6 +10,37 @@
         <meta name="keywords"    content="Netflix, Arcane, League of Legends, Wiki, Fan-made">
 
         <style>
+             label
+            {
+                margin-top: 1em;
+                color: white;
+                font-size: 1.5em;
+                float: left;
+                width: 150px;
+                text-align: left;
+            }
+            input
+            {
+                font-size: 1.4em;
+                margin-left: 1em;
+                margin-bottom: .5em;
+                width: 100%;
+            }
+            textarea
+            {
+                margin-top: 1em;
+            }
+            #button, #reset
+            {
+                margin-top: .5em;
+                width: 8em;
+                background-color: orange;
+            }
+            .required
+            {
+                font-weight: bold;
+                color: red;
+            }
         </style>
 
         <link rel= "stylesheet" href= "styles/stylesheet.css">
@@ -19,13 +50,13 @@
     <body>
 
         <header>
-            <h1>Arcane Fan Wiki</h1>
+            <a href="index.html"> <h1 style="text-decoration: none; color: gold;" >Arcane Fan Wiki</h1> </a> 
 
             <nav>
                 <ul>
                     <li>    <a href="web2.html" >Characters</a> </li>
                     <li>    <a href="web3.html" >Plot</a> </li>
-                    <li>    <a href="web4.html" >Development</a> </li>
+                    <li>    <a href="web4.html" >Contact Us</a> </li>
                 </ul>
             </nav>
 
@@ -33,51 +64,30 @@
 
         <main>
             
-            <article class="Section" >
-                <img src="images/samplephoto.jpeg" alt="Teaser"> 
-                <h2>Initial Teaser</h2>
-                <p>Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info, L  
-                </p>
-            </article>
+            <section id="Form">
 
-            <article class="Section" >
-                <img src="images/samplephoto.jpeg" alt="Trailer"> 
-                <h2>Trailer</h2>
-                <p>Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                </p>
-            </article>
+                <form action="http://year1.ccdev.me/FormTest.php" method="post">
 
-            <article class="Section" >
-                <img src="images/samplephoto.jpeg" alt="Early Development"> 
-                <h2>Early Development</h2>
-                <p>Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                    Development Info,  Development Info, Development Info,  Development Info,  Development Info,  Development Info,  Development Info,  
-                </p>
-            </article>
+                    <label for="first_name">First Name:<span class="required">*</span> </label>
+                    <input type="text" name="first_name" autofocus required><br>
+    
+                    <label for="last_name">Last Name:<span class="required">*</span> </label>
+                    <input type="text" name="last_name" id="last_name" required><br>
+    
+                    <label for="email">Email:<span class="required">*</span> </label>
+                    <input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+                    <label for="message">Query  :</label>
+    
+                    <textarea cols="40"rows="6" id="message" name="message"
+                    placeholder="Your message must be less than 150 characters" data-maxlength="150"></textarea> <br>
+    
+                    <input type="submit" name="submit" id="button" value="Submit">
+                    <input type="reset" name="reset" id="reset">
+    
+                </form>
 
+            </section>
+            
         </main>
 
     </body>

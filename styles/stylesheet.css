@@ -1,18 +1,35 @@
-html
+body
 {
-background-color: darkgray;
+    background-color: #091428;
+    background-image: url(smokes.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+header
+{
+    width: 100%;
 }
 
 h1
 {
+    width: 30%;
+    margin-left: 35%;
     text-align: center; 
-    margin: 5em;
-    margin-left: 9em;
-    margin-right: 9em;
+    text-shadow: 2px 2px #785A28;
     padding: .2em;
-    border: solid black 2px;
-    background-color: gray;
+    border: solid gold 2px;
+    background-color: #0397AB;
+    background-image: url(smokes.jpeg);
+    background-blend-mode: multiply;
     border-radius: .3em;
+}
+
+nav
+{
+    margin-top: 5em;
 }
 
 nav ul
@@ -25,15 +42,27 @@ nav ul li
     font-size: 2em;
     display:inline;
     margin: 1em;
-    border: solid black 2px;
+    border: solid gold 2px;
     border-radius: .5em;
-    background-color: gray;
+    text-shadow: 2px 2px #785A28;
+    background-color: #0397AB;
+    background-image: url(smokes.jpeg);
+    background-blend-mode: multiply;
     padding: .3em;
 }
 
 nav ul li a
 {
     text-decoration: none;
+    color: gold;
+}
+
+hr
+{
+    color: #785A28;
+    margin-top: 4em;
+    margin-left: 5%;
+    width: 90%;
 }
 
 #Hub
@@ -47,11 +76,11 @@ nav ul li a
     font-size: 3em;
     display: inline;
     margin: 2em;
-    border:solid black 2px;
+    border:solid gold 2px;
     padding: 2em;
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color: gray;
+    background-color: #0397AB;
 }
 
 #Hub ul li a
@@ -61,17 +90,46 @@ nav ul li a
 
 .Section
 {
+    margin-left: 2em;
+    width: 90%;
+    height: 300px;
     margin-top: 3em;
     margin-bottom: 1em;
-    border: solid black 2px;
-    font-size: 1em;
-    
+    border: solid gold 2px;
+    font-size: 1.5em;
+    background-color: #0397AB;
+    background-image: url(smokes.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+}
+
+.Section h2
+{
+    color: white;
+}
+
+.Section p
+{
+    color: #A09B8C;
 }
 
 .Section img
 {
-    
-    margin-right: 5px;
-    width: 20%;
-    height: 20%;
+    float: left;
+    margin-right: 1.5em;
+    width: 25%;
+    height: 100%;
+    clear: both;
+}
+
+#Form
+{
+    border: 2px solid gold;
+    padding: 3em;
+    padding-right: 4em;
+    margin-top: 5em;
+    width: 30%;
+    margin-left: 33.5%;
 }
