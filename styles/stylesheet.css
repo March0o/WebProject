@@ -8,6 +8,8 @@
 
 body
 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
     background-color: #0A323C;
     background-image: url(../images/smokes.jpeg);
     background-repeat: no-repeat;
@@ -28,18 +30,33 @@ header a
 
 h1 
 {
-    width: 30%;
     margin-left: 35%;
+    width: 30%;
     text-align: center; 
     padding: .2em;
     border: solid #785A28 1px;
     border-radius: .3em;
 }
 
+h1 a
+{
+    color: #785A28;
+}
+
 h1:hover
 {
     background-color: #CDFAFA;
     border: 2px solid #C89B3C;
+}
+
+h1:hover a
+{
+    color: #C89B3C;
+}
+
+h1:active a
+{
+    color: white;
 }
 
 hr
@@ -50,23 +67,11 @@ hr
     width: 90%;
 }
 
-.Section
-{
-    margin-left: 2em;
-    width: 90%;
-    height: 300px;
-    margin-top: 3em;
-    margin-bottom: 1em;
-    border: solid #785A28 2px;
-    font-size: 1.5em;
-
-
-}
-
-
 .NavFlex
 {
     margin-top: 5em;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -104,6 +109,23 @@ hr
     color: #C89B3C;
 }
 
+.NavFlex li a:active
+{
+    color: white;
+}
+
+.Section
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 300px;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    border: solid #785A28 2px;
+    font-size: 1.5em;
+}
+
 .Section h2
 {
     color: white;
@@ -124,6 +146,14 @@ hr
     clear: both;
 }
 
+.Columns
+{
+    column-count: 2;
+    column-rule: 1px solid white;
+    column-gap: 25px;
+    padding: 5px;
+}
+
 #Form
 {
     border: 2px solid #785A28;
@@ -134,7 +164,13 @@ hr
     margin-left: 33.5%;
 }
 
-#Selected
+footer
 {
-
+    left: 0;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    border: 1px solid #785A28;
 }
