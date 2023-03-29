@@ -10,6 +10,48 @@
         <meta name="keywords"    content="Netflix, Arcane, League of Legends, Wiki, Fan-made">
 
         <style>
+
+            .HubFlexBox
+            {
+                margin-top: 22.5em;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+            }
+
+            .HubFlexContent
+            {
+                flex: 1;
+                margin: 20px;
+                padding-top: 8em;
+                padding-bottom: 8em;
+                padding-left: 2em;
+                padding-right: 2em;
+                display: inline;
+                border: 1px solid #785A28;
+                border-radius: .6em;
+            }
+
+            .HubFlexContent a
+            {
+                font-size: 2em;
+                text-decoration: none;
+                color: #785A28;
+            }
+
+            .HubFlexContent:hover
+            {
+                background-color: #CDFAFA;
+                border: 2px solid #C89B3C;
+            }
+
+            .HubFlexContent:hover a
+            {
+                color: #C89B3C;
+            }
+
         </style>
 
         <link rel= "stylesheet" href= "styles/stylesheet.css">
@@ -19,18 +61,22 @@
     <body>
 
         <header>
-            <a href="index.html"> <h1 style="text-decoration: none; color: gold;" >Arcane Fan Wiki</h1> </a> 
+            <a href="index.html"> <h1 class="BackgroundImage" style="text-decoration: none; color: #785A28; font-weight: bolder;" >Arcane Fan Wiki</h1> </a> 
         </header> 
 
         <main>
+            
+            <section class="HubFlexBox">
 
-            <nav id="Hub" >
-                <ul>
-                    <li>    <a href="web2.html" >Characters S</a> </li>
-                    <li>    <a href="web3.html" >Plot</a> </li>
-                    <li>    <a href="web4.html" >Contact Us</a> </li>
-                </ul>
-            </nav>
+                <nav>
+                    
+                    <article class="HubFlexContent BackgroundImage">  <a href="web2.html" >Characters s</a> </article>
+                    <article class="HubFlexContent BackgroundImage">  <a href="web3.html" >Plot</a> </article>
+                    <article class="HubFlexContent BackgroundImage">  <a href="web4.html" >Contact Us</a> </article>          
+                   
+                </nav>
+
+            </section>
 
         </main>
 

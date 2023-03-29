@@ -1,12 +1,15 @@
-html
+.BackgroundImage
 {
-
+    background-color: #0397AB;
+    background-image: url(../images/smokes.jpeg);
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 body
 {
-    background-color: #091428;
-    background-image: url(smokes.jpeg);
+    background-color: #0A323C;
+    background-image: url(../images/smokes.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -18,48 +21,25 @@ header
     width: 100%;
 }
 
-h1
+header a
+{
+    text-decoration: none;
+}
+
+h1 
 {
     width: 30%;
     margin-left: 35%;
     text-align: center; 
-    text-shadow: 2px 2px #785A28;
     padding: .2em;
-    border: solid gold 2px;
-    background-color: #0397AB;
-    background-image: url(smokes.jpeg);
-    background-blend-mode: multiply;
+    border: solid #785A28 1px;
     border-radius: .3em;
 }
 
-nav
+h1:hover
 {
-    margin-top: 5em;
-}
-
-nav ul
-{
-    text-align: center;
-}
-
-nav ul li
-{
-    font-size: 2em;
-    display:inline;
-    margin: 1em;
-    border: solid gold 2px;
-    border-radius: .5em;
-    text-shadow: 2px 2px #785A28;
-    background-color: #0397AB;
-    background-image: url(smokes.jpeg);
-    background-blend-mode: multiply;
-    padding: .3em;
-}
-
-nav ul li a
-{
-    text-decoration: none;
-    color: gold;
+    background-color: #CDFAFA;
+    border: 2px solid #C89B3C;
 }
 
 hr
@@ -70,29 +50,6 @@ hr
     width: 90%;
 }
 
-#Hub
-{
-    text-align: center;
-    margin-top: 20em;
-}
-
-#Hub ul li
-{
-    font-size: 3em;
-    display: inline;
-    margin: 2em;
-    border:solid gold 2px;
-    padding: 2em;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    background-color: #0397AB;
-}
-
-#Hub ul li a
-{
-    text-decoration: none;
-}
-
 .Section
 {
     margin-left: 2em;
@@ -100,14 +57,51 @@ hr
     height: 300px;
     margin-top: 3em;
     margin-bottom: 1em;
-    border: solid gold 2px;
+    border: solid #785A28 2px;
     font-size: 1.5em;
-    background-color: #0397AB;
-    background-image: url(smokes.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
 
+
+}
+
+
+.NavFlex
+{
+    margin-top: 5em;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 1em;
+    list-style-type: none;
+}
+
+.NavFlex li
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: inline;
+    border: 1px solid #785A28;
+    border-radius: .35em;
+    text-align: center;
+    padding: 1em;
+}
+
+.NavFlex li a
+{
+    text-decoration: none;
+    color: #785A28;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.NavFlex li:hover
+{
+    background-color: #CDFAFA;
+    border: 2px solid #C89B3C;
+}
+
+.NavFlex li:hover a
+{
+    color: #C89B3C;
 }
 
 .Section h2
@@ -118,6 +112,7 @@ hr
 .Section p
 {
     color: #A09B8C;
+    font-size: .75em;
 }
 
 .Section img
@@ -131,10 +126,15 @@ hr
 
 #Form
 {
-    border: 2px solid gold;
+    border: 2px solid #785A28;
     padding: 3em;
     padding-right: 4em;
     margin-top: 5em;
     width: 30%;
     margin-left: 33.5%;
+}
+
+#Selected
+{
+
 }
