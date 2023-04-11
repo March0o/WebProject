@@ -114,12 +114,16 @@ hr
     color: white;
 }
 
+.EpisodeHead
+{
+    margin-left: 1em;
+}
+
 .Section
 {
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
-    height: 300px;
     margin-top: 3em;
     margin-bottom: 1em;
     border: solid #785A28 2px;
@@ -129,12 +133,20 @@ hr
 .Section h2
 {
     color: white;
+    margin-bottom: .3em;
 }
 
 .Section p
 {
     color: #A09B8C;
-    font-size: .75em;
+    font-size: 1.20em;
+    margin-top: 0;
+}
+
+.Section p a
+{
+    text-decoration: none;
+    color: white;
 }
 
 .Section img
@@ -149,9 +161,9 @@ hr
 .Columns
 {
     column-count: 2;
-    column-rule: 1px solid white;
-    column-gap: 25px;
-    padding: 5px;
+    column-rule: 2px solid white;
+    column-gap: 50px;
+    padding: 1em;
 }
 
 #Form
@@ -164,13 +176,56 @@ hr
     margin-left: 33.5%;
 }
 
+#EmptySpace
+{
+    margin-top: 100px;
+}
+
 footer
 {
     left: 0;
     bottom: 0;
     color: white;
     width: 100%;
-    height: 50px;
+    height: 80px;
     position:fixed;
     border: 1px solid #785A28;
+    text-align: center;
+}
+
+footer ul
+{
+    margin-top: .25em;
+}
+
+footer ul li
+{
+    display: inline;
+    margin-right: 2em;
+    padding: .8em;
+    border: 1px solid #785A28;
+    border-radius: .4em;
+}
+
+footer ul li a
+{
+    font-size: 2em;
+    font-weight:bold;
+    text-decoration: none;
+    color: #785A28;
+}
+footer li:hover
+{
+    background-color: #CDFAFA;
+    border: 2px solid #C89B3C;
+}
+
+footer li:hover a
+{
+    color: #C89B3C;
+}
+
+footer li a:active
+{
+    color: white;
 }
