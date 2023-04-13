@@ -168,17 +168,93 @@ hr
 
 #Form
 {
-    border: 2px solid #785A28;
+    float: left;
+    border: 1px solid #785A28;
     padding: 3em;
     padding-right: 4em;
     margin-top: 5em;
+    margin-left: 7.5%;
+    width: 40%;
+    margin-bottom: 2em;
+}
+
+#Location
+{
+    float: right;
     width: 30%;
-    margin-left: 33.5%;
+    border: 1px solid #785A28;
+    padding: 3em;
+    padding-right: 4em;
+    margin-top: 5em;
+    margin-right: 7.5%;
+}
+#Location h2
+{
+    color: white;
+}
+
+#ContactSection
+{
+    border: solid 1px #785A28;
+    width: 20%;
+    margin-top: 5em;
+    margin-left: 40%
+}
+
+#ContactInfo
+{
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 1em;
+}
+
+th,td,tr
+{
+    border: solid 1px #785A28;
+    text-align: left;
 }
 
 #EmptySpace
 {
     margin-top: 100px;
+}
+
+#ReferencesList
+{
+    color: white;
+}
+
+#ReferencesList li
+{
+    margin-bottom: 2em;
+}
+
+#ReferencesList li a
+{
+    color: #785A28;
+}
+
+#ReferencesList li a:hover
+{
+    color: #C89B3C;
+}
+
+#ReferencesList li a:active
+{
+    color: white;
+}
+
+#VideoArticle
+{
+    margin-top: 6em;
+    text-align: center;
+}
+
+#Video
+{
+    border: 1px solid #785A28;
+    margin-bottom: 3em;
 }
 
 footer
